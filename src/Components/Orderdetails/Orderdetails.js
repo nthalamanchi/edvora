@@ -2,12 +2,15 @@ import React, {useContext} from "react";
 import { store } from "../Home/Main";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Header from "../Home/Header";
+
 
 const Orderdetails = () =>{
     const[storedata,setstoredata]=useContext(store)
 
      return (
     <>
+    <Header/>
     <Container className='d-flex flex-wrap'>
       {
         storedata.Orders.map((item,index)=>(

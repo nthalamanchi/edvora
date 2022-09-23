@@ -3,11 +3,13 @@ import { store } from "../Home/Main";
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import Header from "../Home/Header";
 
 const Products = () =>{
   const[storedata,setstoredata]=useContext(store)
   return (
     <>
+    <Header/>
     <h3 className="bg-info text-white text-center text-uppercase font-weight-bold mt-2 mb-2 pt-2 pb-2">Data Visualization</h3>
      <div style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer>

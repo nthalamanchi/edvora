@@ -4,7 +4,7 @@ import axios from 'axios'
 import Orderdetails from "../Orderdetails/Orderdetails";
 import Products from "../Products/Products";
 import Valuablecustomers from "../Valuablecustomers/Valuablecustomers";
-import Header from "./Header";
+
 import Home from "./Home";
 
 export const store = createContext();
@@ -31,7 +31,7 @@ const Main = ()=>{
     return(
       <store.Provider value={[storedata,setstoredata]}>
           <div>
-            <Header/>
+           
         <Routes>
         <Route path='/' exact element={<Home/>}/>
         <Route path='/Valuablecustomers' exact element={<Valuablecustomers/>}/>

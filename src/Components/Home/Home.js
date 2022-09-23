@@ -5,12 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { data } from './Homedata';
+import Header from './Header';
 
 function Home() {
    
    
   return (
     <>
+    <Header/>
       <h3 className="text-center text-uppercase font-weight-bold p-3 mb-2 bg-danger text-white">OVERVIEW</h3>
       <Container>
         {
