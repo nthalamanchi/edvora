@@ -6,7 +6,9 @@ import Products from "../Products/Products";
 import Valuablecustomers from "../Valuablecustomers/Valuablecustomers";
 import Header from "./Header";
 import Home from "./Home";
+
 export const store = createContext();
+
 const Main = ()=>{
    const [storedata, setstoredata] = useState({ Orders:[], Products:[], Customers:[] });
     useEffect(() => {
