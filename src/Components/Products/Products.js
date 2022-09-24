@@ -27,8 +27,9 @@ const Products = () =>{
     </div>
     <p className="text-center text-uppercase font-weight-bold">Data Analysis of items,based on stocks and selling price</p>
     <Container>
-       <Table responsive bordered hover>
-      <tr>
+       <Table className="text-center table table-striped table-bordered table-hover table-condensed">
+       <tbody>
+       <tr>
           <th>S.NO</th>
           <th>NAME</th>
           <th>Stock</th>
@@ -42,6 +43,7 @@ const Products = () =>{
                 <td>{item.stock}</td>
             </tr>
       ))}
+      </tbody>
       </Table>
     </Container>
     </>

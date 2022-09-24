@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {LinkContainer} from 'react-router-bootstrap'
-import logo from '../Images/edvora.png'
+import logo from '../Images/project.png.png'
 import { links } from './HeaderLinks';
 
 const Header = () =>{
@@ -13,8 +13,7 @@ const Header = () =>{
       <Container>
       <Container>
           <Navbar.Brand href="/">
-            <img alt="" src={logo} width="30" height="30" className="d-inline-block align-top"/>
-            EDVORA
+            <img alt="" src={logo} width="200" height="50" className="d-inline-block align-top"/>
           </Navbar.Brand>
         </Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
